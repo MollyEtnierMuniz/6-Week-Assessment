@@ -18,7 +18,7 @@ test('Title shows up when page loads', async () => {
     const displayed = await title.isDisplayed()
     expect(displayed).toBe(true)
 })
-
+///this is not done. I need to edit it
 test('clicking Draw button displays div with id=choices', async () => {
     const title = await driver.findElement(By.id('title'))
     const displayed = await title.isDisplayed()

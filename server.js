@@ -15,10 +15,10 @@ var rollbar = new Rollbar({
 
 app.use(express.json())
 
-app.get('/', function(req,res){
-    res.sendFile(path.join(__dirname, '../index.html'))
+app.get('/', (req,res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'))
 })
-app.use(express.static(path.join(__dirname, '..public')))
+app.use(express.static('public'))
 
 app.get('/api/robots', (req, res) => {
     try {
